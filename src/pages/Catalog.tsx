@@ -21,7 +21,7 @@ const Catalog = (): JSX.Element => {
 
   const [catalogState, setCatalogState] = useState<catalogStateProps[]>([])
   useEffect(() => {
-    const apiUrl = `https://courses.umnoc.ru/umnoc/api/courses?limit=${limit}&offset=${offset}`
+    const apiUrl = `https://courses.urfu.online/cnot/api/courses?limit=${limit}&offset=${offset}`
     axios.get(apiUrl, { withCredentials: true }).then((resp) => {
       const allCourses = resp.data.items
 
@@ -32,7 +32,7 @@ const Catalog = (): JSX.Element => {
   }, [setCatalogState])
 
   const getMore = () => {
-    const apiUrl = `https://courses.umnoc.ru/umnoc/api/courses?limit=${limit}&offset=${offset}`
+    const apiUrl = `https://courses.urfu.online/cnot/api/courses?limit=${limit}&offset=${offset}`
     axios.get(apiUrl, { withCredentials: true }).then((resp) => {
       const allCourses = resp.data.items
       if (allCourses.length < 9) {

@@ -23,9 +23,9 @@ const HeaderNavs = (): JSX.Element => {
 
   return (
     <Tabs value={currentTab}>
-      <Tab label="Главная" value="/" to="/" component={Link} />
+      {/*<Tab label="Главная" value="/" to="/" component={Link} />*/}
       <Tab label="Каталог курсов" value="/courses" to="/courses" component={Link} />
-      <Tab label="О платформе" value="/about" to="/about" component={Link} />
+      {/*<Tab label="О платформе" value="/about" to="/about" component={Link} />*/}
     </Tabs>
   )
 }

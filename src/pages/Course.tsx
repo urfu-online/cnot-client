@@ -55,7 +55,7 @@ const Course = () => {
     course_id: '',
   })
   useEffect(() => {
-    const apiUrl = `https://courses.umnoc.ru/umnoc/api/courses/${params.id}`
+    const apiUrl = `https://courses.urfu.online/cnot/api/courses/${params.id}`
     axios.get(apiUrl, { withCredentials: true }).then((resp) => {
       const allCourses = resp.data
       setCourseState(allCourses)
@@ -63,7 +63,7 @@ const Course = () => {
   }, [setCourseState])
 
   useEffect(() => {
-    const apiUrl = `https://courses.umnoc.ru/umnoc/api/courses/my`
+    const apiUrl = `https://courses.urfu.online/cnot/api/courses/my`
     axios
       .get(apiUrl, { withCredentials: true })
       .then((resp) => {
@@ -80,8 +80,8 @@ const Course = () => {
         title={courseState.display_name}
         description={courseState.short_description}
         image_url={courseState.course_image_url}
-        url={`https://courses.umnoc.ru/umnoc/api/me/enroll/${courseState.id}`}
-        goToCourse={`https://courses.umnoc.ru/courses/${courseState.course_id}/course`}
+        url={`https://courses.urfu.online/cnot/api/me/enroll/${courseState.id}`}
+        goToCourse={`https://courses.urfu.online/courses/${courseState.course_id}/course`}
         isEnrollmentAllowed={courseState.enrollment_allowed}
         isEnrollment={courses.map((el) => el.id).includes(courseState.id)}
       />
@@ -163,7 +163,7 @@ const Course = () => {
               {/* </Typography> */}
               {/* <CourseButton
                 title={'Записаться на курс'}
-                url={`https://courses.umnoc.ru/umnoc/api/me/enroll/${courseState.id}`}
+                url={`https://courses.urfu.online/cnot/api/me/enroll/${courseState.id}`}
               /> */}
             </Grid>
           </Grid>

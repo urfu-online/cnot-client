@@ -17,7 +17,7 @@ const App = (): JSX.Element => {
         <Box>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Catalog />} />
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/courses" element={<Catalog />} />
             <Route path="/about" element={<About />} />

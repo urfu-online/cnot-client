@@ -12,8 +12,8 @@ const Footer: React.FC = (): JSX.Element => {
         <Box sx={{ color: 'white', mt: 5 }}>
           <p>
             Контакты <br />
-            <a style={{ color: 'white' }} href="mailto:umnoc@urfu.online">
-              umnoc@urfu.online
+            <a style={{ color: 'white' }} href="mailto:courses@urfu.online">
+              courses@urfu.online
             </a>
           </p>
         </Box>

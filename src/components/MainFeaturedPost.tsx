@@ -24,7 +24,7 @@ const MainFeaturedPost = (props: MainFeaturedPostProps): JSX.Element => {
         backgroundColor: 'grey.800',
         color: '#fff',
         mb: 4,
-        background: 'linear-gradient(215deg, rgba(255,221,0,1) 0%, rgba(247,148,29,1) 100%)',
+        background: '#3f51b5',
       }}
     >
       <Container sx={{ p: 6 }}>

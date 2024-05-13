@@ -15,7 +15,7 @@ const Header: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <HeaderBrand />
+      {/*<HeaderBrand />*/}
       <Container sx={{ px: { xs: 0, sx: 0, md: 0, lg: 0, xl: 0 } }}>
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
@@ -23,8 +23,8 @@ const Header: React.FC = (): JSX.Element => {
           </Box>
           {state.user && (
             <HeaderUserAccountMenu
-              url_logout={'https://courses.umnoc.ru/logout'}
-              url_dashboard={'https://courses.umnoc.ru/dashboard'}
+              url_logout={'https://courses.urfu.online/logout'}
+              url_dashboard={'https://courses.urfu.online/dashboard'}
               url_studio={'https://studio.umnoc.ru'}
               username={state.user.user.username}
               is_staff={state.user.user.is_staff}
@@ -32,7 +32,7 @@ const Header: React.FC = (): JSX.Element => {
           )}
           {!state.user && (
             <HeaderLoginButton
-              url={{ login: 'https://courses.umnoc.ru/login', register: 'https://courses.umnoc.ru/register' }}
+              url={{ login: 'https://courses.urfu.online/login', register: 'https://courses.urfu.online/register' }}
             />
           )}
         </Toolbar>

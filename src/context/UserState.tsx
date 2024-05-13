@@ -47,7 +47,7 @@ export const UserState = ({ children }: UserStateProps): JSX.Element => {
     loading: false,
   }
   const [state, dispatch] = useReducer(userReducer, initialState)
-  const apiUrl = 'https://courses.umnoc.ru/umnoc/api/me'
+  const apiUrl = 'https://courses.urfu.online/cnot/api/me'
 
   const checkUser = async () => {
     setLoading()

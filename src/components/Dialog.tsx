@@ -34,7 +34,7 @@ export default function FormDialog({ id }: { id: number }) {
 
   const sentForm = () => {
     axios
-      .post('https://courses.umnoc.ru/umnoc/api/me/learning_request', dataForm, { withCredentials: true })
+      .post('https://courses.urfu.online/cnot/api/me/learning_request', dataForm, { withCredentials: true })
       .then((resp) => {
         console.log(resp)
       })
